@@ -10,17 +10,6 @@ export default {
     ssgName: 'nextjs',
     nodeVersion: '16',
 
-    import: {
-        type: 'contentful',
-        contentFile: 'contentful/export.json',
-        uploadAssets: true,
-        assetsDirectory: 'contentful',
-        spaceIdEnvVar: 'CONTENTFUL_SPACE_ID',
-        deliveryTokenEnvVar: 'CONTENTFUL_DELIVERY_TOKEN',
-        previewTokenEnvVar: 'CONTENTFUL_PREVIEW_TOKEN',
-        accessTokenEnvVar: 'CONTENTFUL_MANAGEMENT_TOKEN'
-    },
-
     // contentSources is a list of modules implementing the ContentSourceInterface
     contentSources: [
         new ContentfulContentSource({
